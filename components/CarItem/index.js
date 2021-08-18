@@ -3,7 +3,8 @@ import { Text, View, ImageBackground } from "react-native";
 import StyledButton from "../StyledButton";
 import styles from "./styles";
 
-export default ({ name, tagline, taglineCTA, image }) => {
+export default ({ car }) => {
+  const { name, tagline, taglineCTA, image } = car;
   return (
     <View style={styles.carContainer}>
       <ImageBackground source={image} style={styles.image} />
